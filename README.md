@@ -45,7 +45,7 @@ Install Python, Git, and Docker.
 Clone the repository:
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone https://github.com/LeratoTala/chaos-kitchen
 cd chaos-kitchen
 ```
 
@@ -62,6 +62,25 @@ Install dependencies once `requirements.txt` is available:
 pip install -r requirements.txt
 ```
 
+## Running the Project
+
+The easiest way to run the project is with Docker Compose. Make sure Docker is installed and running, then from the project root:
+
+```bash
+docker compose up --build
+```
+
+This starts the app and a PostgreSQL database together. Once running:
+
+- API: http://localhost:8000
+- Interactive API docs: http://localhost:8000/docs
+
+To stop the project:
+
+```bash
+docker compose down
+```
+
 ## Chaos Experiments
 
 The project will explore:
@@ -73,9 +92,6 @@ The project will explore:
 
 All experiments will run in a controlled local environment.
 
-## Project Status
-
-The project is currently in development. Features will be added and tested step by step.
 
 ## Safety
 
